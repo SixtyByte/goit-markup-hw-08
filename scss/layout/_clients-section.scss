@@ -1,0 +1,40 @@
+ .clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+  &__list{display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 30px;}
+  }
+  
+  
+  .clients-section__logo-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    color: #AFB1B8;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    transition: color, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus{
+      color: var(--active-button-color);
+      border-color: var(--active-button-color);
+  };
+  &:hover{color: var(--active-button-color);
+    fill: var(--active-button-color);
+    border-color: var(--active-button-color);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+  }
+  
+.clients-section__logo-icon {
+    fill: currentColor;
+    transition: color, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+  }

@@ -1,0 +1,27 @@
+//Varibles//*
+@import './utils/variables';
+@import './utils/visualy-hidden';
+//Base//*
+@import './base/reset';
+@import './base/base';
+//Component//*
+@import"./components/buttons";
+@import"./components/logo";
+@import "./components/section-tittle";
+@import"./components/contact";
+@import"./components/galery";
+@import"./components/overlay";
+@import"./components/backdrop";
+
+//Layout//*
+
+@import"./layout/header";
+@import "./layout/navigation";
+@import"./layout/main-window";
+@import"./layout/props-section";
+@import"./layout/what-we-do-section";
+@import"./layout/team-section";
+@import "./layout/clients-section";
+@import"./layout/footer";
+@import"./layout/modal.scss";
+@import"./layout/subscribe";

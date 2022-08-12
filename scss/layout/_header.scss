@@ -1,0 +1,34 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  header.no-transparency {
+    background-color: white;
+  
+  }
+  
+  .header__logo-style--blue {
+    font-family: var(--second-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: #2196f3;
+  }
+  
+  .header__logo-style--black {
+    font-family: var(--second-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-right: 93px;
+  }
+
+  .header__border {
+    border-bottom: 1px solid #ECECEC;
+  }

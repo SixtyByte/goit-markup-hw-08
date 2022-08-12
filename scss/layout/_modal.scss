@@ -1,0 +1,246 @@
+.modal {
+    padding-top: 37px;
+    padding-left: 37px;
+    padding-right: 42px;
+    position: relative;
+    width: 528px;
+    min-height: 581px;
+    background-color: white;
+    border-radius: 4px;
+    z-index: 1000;
+    transition: opacity, 600ms linear, visibility 600ms ease-out;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__header {
+        display: block;
+        width: 448px;
+        height: 23px;
+        left: 576px;
+        top: 261px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #212121;
+        margin-bottom: 12px;
+    }
+}
+
+.modal__icon--agree {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.subscribe___btm-icon {
+    margin-left: 10px;
+}
+
+.modal__contract-link {
+    text-decoration: underline;
+    color: var(--active-button-color);
+    text-underline-position: under;
+}
+
+.modal__form-register {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal__icon--agree {
+    justify-content: center;
+    align-items: baseline;
+}
+
+.modal__register-form--agree {
+    display: flex;
+    margin-top: 20px;
+    align-content: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.modal__submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 56px;
+    min-width: 200px;
+    margin-bottom: 42px;
+    min-height: 50px;
+    background: #2196f3;
+    color: white;
+    border: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+
+    &:hover {
+        background: #188ce8;
+        transition: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:focus {
+        background: #188ce8;
+        transition: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+
+
+.modal-form {
+    display: block;
+    text-align: center;
+}
+
+.modal__input {
+    width: 100%;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    min-height: 40px;
+    outline: none;
+    
+    &:hover{   border-color: var(--active-button-color);}
+    &:focus{ border-color: var(--active-button-color)}
+}
+
+
+.modal__input:not(:placeholder-shown) {
+    border-color: #188ce8;
+}
+
+.modal__icon--agree:focus {
+    fill: currentColor;
+}
+
+.modal__icon {
+    fill: currentColor;
+
+    &--agree {
+        justify-content: center;
+        align-items: baseline;
+    }
+
+
+}
+
+.modal__comment {
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    min-width: 448px;
+    min-height: 120px;
+    resize: none;
+    outline: none;
+    &:hover{border-color: var(--active-button-color);}
+    &:focus{border-color: var(--active-button-color);}
+}
+
+.modal__register-form-wrap {
+    display: block;
+    position: relative;
+    padding-bottom: 0;
+
+    &:hover {
+        border-color: #188ce8;
+        color: #188ce8;
+    }
+    &:focus {
+        border-color: #188ce8;
+        color: #188ce8;
+    }
+}
+
+.modal__register-form-wrap:last-child {
+    margin-bottom: 0;
+}
+
+.modal__icon {
+    position: absolute;
+    left: 12px;
+    bottom: 11px;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal__line-name {
+    display: flex;
+    align-items: left;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-family: 'Roboto';
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    color: #757575;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal__input:focus+.modal__icon {
+    fill: #188ce8;
+}
+
+
+.modal__check {
+    opacity: 0;
+    transition: opacity, 250ms;
+}
+
+.modal__checkbox:checked+.modal__icon--agree .modal__uncheck {
+    opacity: 0;
+}
+
+.modal__checkbox:checked+.modal__icon--agree .modal__check {
+    opacity: 1;
+}
+
+.modal__checkbox {
+    opacity: 0;
+}
+
+.modal__agree-point {
+    display: flex;
+    user-select: none;
+    padding: 0%;
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}

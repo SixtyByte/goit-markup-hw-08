@@ -1,0 +1,31 @@
+.main-window__container {
+    text-align: center;
+    min-height: 600px;
+  
+  }
+  
+  .main-window {
+    padding-top: 200px;
+    background: #2f303a;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studiopage/8.jpg);
+    /*url("../images/studiopage/8.jpg");/*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    max-height: 600px;
+    min-width: 1600px;
+    max-width: 1600px;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+
+&__title{font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;}}
+  
+  
+  

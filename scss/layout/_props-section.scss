@@ -1,0 +1,47 @@
+/**Section props*/
+.props-section {
+    padding-top: 94px;
+    &__container{display: flex;
+        margin-top: 0;}
+  }
+
+  
+ 
+  
+  .props-section__list {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .props-section__item-container {
+    display: flex;
+    justify-content: center;
+    background-size: 270px 120px;
+    ;
+    background-color: #F5F4FA;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+  }
+  
+  .props-section{
+    &__title{font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-top: 30px;
+    margin-bottom: 10px;}
+    
+    &__text{font-size: 14px;
+        line-height: calc(24/14);
+        letter-spacing: 0.03em;
+        color: #757575;
+        max-width: 270px;}
+  }
+  
+ 
+  
