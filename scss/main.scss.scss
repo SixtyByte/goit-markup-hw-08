@@ -1,4 +1,5 @@
 //Varibles//*
+@import "./utils/\ breakpoints";
 @import './utils/variables';
 @import './utils/visualy-hidden';
 //Base//*
@@ -12,6 +13,7 @@
 @import"./components/galery";
 @import"./components/overlay";
 @import"./components/backdrop";
+@import"./components/mobile-menu";
 
 //Layout//*
 

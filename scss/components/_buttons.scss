@@ -100,6 +100,8 @@
   border-color: transparent;
   letter-spacing: 0.06em;
   cursor: pointer;
+  @media screen and (max-width: 480px)
+  { margin-top:20px;margin-left:0;}
 
   &:hover{background: #188ce8;
     transition: 250ms;
@@ -123,6 +125,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: color, 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
 
   &:hover{ fill: var(--active-button-color);
     transition: 250ms;

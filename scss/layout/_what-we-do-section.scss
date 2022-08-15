@@ -6,6 +6,11 @@
         gap: 30px;
         margin: 0;
         padding: 0;
-      }}
+      } @media screen and (max-width: 480px)
+      {display: none; padding-right: 15px;  width: 100%; margin-bottom: 30px;}}
   
-  
+  .what-we-do__images{@media screen and (max-width: 480px)
+    {display: none; padding-right: 15px;  width: 100%; margin-bottom: 30px;}}
+    .what-we-do__title-hide{@media screen and (max-width: 480px)
+      {display: none; padding-right: 15px;  width: 100%; margin-bottom: 30px;}}
+      

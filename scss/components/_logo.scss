@@ -13,7 +13,9 @@
         line-height: 31px;
         letter-spacing: 0.03em;
         color: #000000;
-        margin-right: 93px;}
+       
+        @media screen and (max-width: 481px)
+        { margin-right: auto;padding-top: 16px; padding-bottom: 16px;}}
   }
   
 

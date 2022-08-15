@@ -2,14 +2,18 @@
     padding-top: 37px;
     padding-left: 37px;
     padding-right: 42px;
+    padding-left: 42px;
     position: relative;
-    width: 528px;
+    max-width: 528px;
     min-height: 581px;
     background-color: white;
     border-radius: 4px;
     z-index: 1000;
     transition: opacity, 600ms linear, visibility 600ms ease-out;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 480px)
+    {max-width: 100%;display: block;margin-left:auto;margin-right:auto}
+  
 
     &__header {
         display: block;
@@ -28,8 +32,10 @@
 
         color: #212121;
         margin-bottom: 12px;
+        @media screen and (max-width: 480px)
+      {  max-width: 100%;display: block;}
     }
-}
+
 
 .modal__icon--agree {
     justify-content: center;
@@ -45,13 +51,19 @@
     text-decoration: underline;
     color: var(--active-button-color);
     text-underline-position: under;
+    @media screen and (max-width: 480px)
+    {  max-width: 100%;display:inline;}
 }
 
 .modal__form-register {
     display: block;
     margin-bottom: 20px;
     text-align: center;
+    @media screen and (max-width: 480px)
+    {  max-width: 448px;display: block;}
+  }
 }
+
 
 .modal__icon--agree {
     justify-content: center;
@@ -106,7 +118,13 @@
 .modal-form {
     display: block;
     text-align: center;
-}
+    
+    @media screen and (max-width: 480px)
+    {  max-width: 448px;display: block;}
+    
+  }
+
+
 
 .modal__input {
     width: 100%;
@@ -116,9 +134,15 @@
     cursor: pointer;
     min-height: 40px;
     outline: none;
+    @media screen and (max-width: 480px)
+    {  max-width: 370px;display: block;}
     
     &:hover{   border-color: var(--active-button-color);}
     &:focus{ border-color: var(--active-button-color)}
+    @media screen and (max-width: 480px)
+    {  max-width: 100%;display: block;}
+    text-align: left;
+    
 }
 
 
@@ -146,19 +170,23 @@
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 12px;
-    min-width: 448px;
     min-height: 120px;
+    min-width: 100%;
+    max-width: 448px;    
     resize: none;
     outline: none;
+    @media screen and (min-width: 480px)
+    {max-width:100%;display: block;}
     &:hover{border-color: var(--active-button-color);}
     &:focus{border-color: var(--active-button-color);}
+    
 }
 
 .modal__register-form-wrap {
     display: block;
     position: relative;
     padding-bottom: 0;
-
+width: 100%;
     &:hover {
         border-color: #188ce8;
         color: #188ce8;
@@ -243,4 +271,6 @@
     letter-spacing: 0.03em;
 
     color: #757575;
+    @media screen and (min-width: 480px)
+    {max-width:100%;display: inline;}
 }

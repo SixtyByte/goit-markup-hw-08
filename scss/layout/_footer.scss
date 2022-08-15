@@ -1,23 +1,39 @@
 .footer {
+  padding: auto;
+  ;
+  
     display: flex;
     padding-top: 60px;
     background-color: #2f303a;
     min-height: 252px;
-    padding-bottom: 60px;
-&__container{display: flex;
-    
-    align-items: baseline;}  
-}
+    padding-bottom: 60px; @media screen and (max-width: 480px)
+    {width: 100%;display: block;padding-top:30px;margin:0;box-sizing:border-box;};}
+.footer__container{display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: auto;
+    @media screen and (max-width: 480px)
+    {max-width: 448px;display: block;padding-top:30px;margin:0;display: block;box-sizing:border-box;};
+  }
 
-
+.footer__container{@media screen and (max-width: 480px)
+  { max-width:448px;margin-left:auto;margin-right:auto; padding: auto;  display:block; text-align: center; } }
   
   .footer__side{
-    &--social{margin-left: 70px;}};
+    &--social{margin-left: 70px;}
+    @media screen and (max-width: 480px)
+    {  max-width: 448px; margin:0;}
+ 
+    
+  };
+  .footer__side--social{@media screen and (max-width: 480px){max-width:448px; margin: 0;}}
   
   .footer__list {
     padding: 0;
     margin-bottom: 0;
     margin-top: 20px;
+    
+    
   }
   
   .footer__social-list {
@@ -26,6 +42,8 @@
     padding: 0;
     margin-top: 20px;
     margin-bottom: 0;
+    @media screen and (max-width: 480px)
+    {  width: 100%;justify-content:center; margin-bottom: 60px;}
   }
   
   .footer__social-link {
@@ -66,23 +84,27 @@
   }
 
   
-  .footer {&__title{
+  .footer__title{
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;} 
+    color: #FFFFFF;
+    @media screen and (max-width: 480px)
+    {max-width: 100%;}
+  } 
+  
     
-    &__item{font-style: normal;
+    .footer__item{font-style: normal;
         font-size: 14px;
         line-height: calc(24 / 14);
         letter-spacing: 0.03em;
         color: #ffffff;
         margin-top: 20px;}
+        
   
-  }
-
+.footer__title{@media screen and (max-width: 480px){margin-top: 60px;}}
   .footer__link{color: #FFFFFF;}
   
   .footer__item--mail  .footer__link--mail{
