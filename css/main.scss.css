@@ -52,6 +52,16 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 /*base styles/*/
 img {
   display: block;
@@ -897,6 +907,10 @@ header.no-transparency {
     width: 100%;
     display: block;
     background-position: auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: -webkit-image-set(url("../images/studiopage/Background-hero/main-background-mobile/Headerimg.jpg") 1x, url("../images/studiopage/Background-hero/main-background-mobile/Headerimg@2x.jpg") 2x);
+    background-image: image-set(url("../images/studiopage/Background-hero/main-background-mobile/Headerimg.jpg") 1x, url("../images/studiopage/Background-hero/main-background-mobile/Headerimg@2x.jpg") 2x);
   }
 }
 

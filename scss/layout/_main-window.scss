@@ -27,11 +27,8 @@
     text-transform: uppercase;
     color: #ffffff;}
     @media screen and (max-width: 480px)
-    {width: 100%;display: block; background-position: auto;
-    };
-   
-  }
+    {width: 100%;display: block; background-position: auto; background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));background-image:image-set(url("../images/studiopage/Background-hero/main-background-mobile/Headerimg.jpg") 1x,
+      url("../images/studiopage/Background-hero/main-background-mobile/Headerimg@2x.jpg") 2x);};
 
   
-  
-  
+    }
