@@ -406,6 +406,16 @@ body {
   margin: 0;
   padding-left: 0;
 }
+@media screen and (max-width: 480px) {
+  .project-section__list {
+    max-width: 448px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
 
 .project-section__image-list {
   display: -webkit-box;
@@ -417,6 +427,11 @@ body {
   padding-left: 0;
   margin-top: 50px;
   margin-bottom: 0;
+}
+@media screen and (max-width: 480px) {
+  .project-section__image-list {
+    max-width: 448px;
+  }
 }
 .project-section__portfolio-item {
   position: relative;
