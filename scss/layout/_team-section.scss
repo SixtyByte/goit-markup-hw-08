@@ -7,7 +7,8 @@
     &__list{display: flex;
         gap: 30px;
         margin: 0;
-        padding: 0;}
+        padding: 0;
+      }
   }
   .team-section__list{ @media screen and (max-width: 480px)
     {  width: 448;display: block; };}
