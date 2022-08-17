@@ -330,6 +330,14 @@ body {
   margin-left: 0;
   padding-left: 0;
 }
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .contact-styles__link--mail {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+  }
+}
 @media screen and (max-width: 480px) {
   .contact-styles__link--mail {
     width: 480px;
@@ -349,15 +357,25 @@ body {
   margin-right: 0;
   padding: 0;
 }
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .contact-styles {
+    max-width: 100%;
+    display: none;
+    display: table;
+    margin-bottom: 21px;
+    margin-top: 21px;
+    gap: 0;
+  }
+}
 @media screen and (max-width: 480px) {
   .contact-styles {
     width: 480px;
     display: none;
   }
-  .contact-styles__icon {
-    fill: currentColor;
-    margin-right: 3px;
-  }
+}
+.contact-styles__icon {
+  fill: currentColor;
+  margin-right: 3px;
 }
 
 .contact-styles__link {
@@ -375,6 +393,13 @@ body {
   transition: color, 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .contact-styles__link {
+    max-width: 100%;
+    padding: 0;
+    display: inline-block;
+  }
 }
 .contact-styles__link:hover {
   color: var(--active-button-color);
@@ -761,9 +786,16 @@ header.no-transparency {
   padding: 0;
   margin: 0;
 }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
   .menu {
     display: none;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .menu {
+    width: 100%;
+    margin-right: 84px;
+    margin-left: 88px;
   }
 }
 
