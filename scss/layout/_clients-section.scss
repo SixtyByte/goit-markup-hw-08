@@ -37,7 +37,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 0) and (max-width:767px)
-    {display: flex; justify-content: center;}
+    {display: flex; justify-content: center; max-width: 100%;}
     
     /**tablet*/
     @media screen and (min-width: 768px) and (max-width:1199px)

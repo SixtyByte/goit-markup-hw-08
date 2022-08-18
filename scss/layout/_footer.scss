@@ -15,13 +15,15 @@
 &__container{display: flex;
   
   align-items: baseline; 
-  @media screen and (min-width: 0) and (max-width:767px)
-  {width: 100%;   display: table;
+  
+    
+}
+.footer__container{@media screen and (min-width: 0) and (max-width:767px)
+  {max-width: 100%;  display: inline-block;
     text-align: center;
     margin-left: auto;
-    margin-right: auto;}
-  }  
-}
+    margin-right: auto;}}
+
 
 
 
@@ -29,10 +31,15 @@
   &--social{margin-left: 70px;
   @media screen and (min-width: 0) and (max-width:767px){margin:0}}
   @media screen and (min-width: 0) and (max-width:767px)
-  {width: 100%;;
+  {max-width: 448px;}
     text-align: center;
-    margin-left: auto;
-    margin-right: auto; margin-bottom: 60px; margin-left: 0;} };
+     margin-bottom: 60px; margin-left: 0;};
+  
+  
+     .footer__side{ @media screen and (min-width: 0) and (max-width:767px)
+      {max-width: 448px;}
+        text-align: center;
+         margin-bottom: 60px; margin-left: 0;};}   
  
 
 .footer__list {
@@ -119,7 +126,7 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
-width: 100%;
+max-width: 100%;
 }
 
 .footer__item--phone .footer__link--phone {
@@ -131,5 +138,5 @@ width: 100%;
   margin-top: 9px;
   transition: color, 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width:100%;
+  max-width:100%;
 }
