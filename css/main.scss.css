@@ -1484,11 +1484,18 @@ header.no-transparency {
   margin-left: 70px;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
+  .footer__side--social {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
   .footer__side {
-    width: 480px;
+    width: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: 0;
   }
 }
 
@@ -1516,8 +1523,11 @@ header.no-transparency {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-right: auto;
+    margin-bottom: 60px;
   }
 }
 
@@ -1623,6 +1633,7 @@ header.no-transparency {
   transition: color, 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
 }
 
 .modal {
