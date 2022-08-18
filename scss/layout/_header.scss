@@ -3,12 +3,18 @@
     align-items: center;
     margin-left: auto;
     width: 100%;
-    @media screen and (max-width: 480px)
-    {  width: 448px;margin-left:auto;margin-right:auto;position: relative; padding-top: 16px; padding-bottom: 16px; };
+   
+    margin-left:auto;margin-right:auto;position: relative;
+    @media screen and (min-width: 0) and (max-width:767px)
+    {  padding-top: 16px; padding-bottom: 16px;  };
+    @media screen and (min-width: 480px)
+    {  width: 448px;  };
+    @media screen and (min-width: 768px)
+    {  width: 720px;padding: 0 };
+    @media screen and (min-width: 1200px)
+    {  width: 1200px  };
     
     
-    @media screen and (min-width: 481px) and (max-width:1199px)
-    {max-width: 100%; } 
     
     
     

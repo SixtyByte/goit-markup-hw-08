@@ -5,11 +5,12 @@
     padding-right: 0;
     margin-left: 0;
     padding-left: 0;
-    @media screen and (min-width: 481px) and (max-width:768px)
-    {max-width: 100%;  display: block; margin-bottom: 10px; padding-bottom: 0; }
-    @media screen and (max-width: 480px)
+    @media screen and (min-width: 0) and (max-width:767px)
     {width: 480px;display: none; padding-top: 0;
       padding-bottom: 0;padding: 0;}
+      
+      @media screen and (min-width: 768px) and (max-width:1199px)
+      {max-width: 720px;  display: block; margin-bottom: 10px; padding-bottom: 0; }
   
   }
   
@@ -22,10 +23,12 @@
     margin-left: auto;
     margin-right: 0;
     padding: 0;
-    @media screen and (min-width: 481px) and (max-width:768px)
-    {max-width: 100%; display: none; display: table; margin-bottom: 21px; margin-top:21px; gap:0} 
-    @media screen and (max-width: 480px)
-    {width: 480px;display: none;}
+    @media screen and (max-width: 767px) 
+    {width: 720px;  display: none;  }
+   
+    @media screen and (min-width: 768px) and (max-width:1199px)
+    {max-width: 720px; display: none; display: table; margin-bottom: 21px; margin-top:21px; padding: 0;} 
+   
 
     &__icon{fill: currentColor;
         margin-right: 3px;}
@@ -47,8 +50,14 @@
     padding-left: 0;
     transition: color, 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width: 481px) and (max-width:768px)
-    { max-width: 100%; padding:0;  display: inline-block; }
+    @media screen and (min-width: 0) and (max-width:767px)
+    {display: none;}
+    
+    
+    @media screen and (min-width: 768px) and (max-width:1199px)
+    { max-width: 720px; padding:0;  display: inline-block; }
+
+   
 
     &:hover{ color: var(--active-button-color);
         transition: 250ms;

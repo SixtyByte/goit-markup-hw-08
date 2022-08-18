@@ -100,7 +100,7 @@
   border-color: transparent;
   letter-spacing: 0.06em;
   cursor: pointer;
-  @media screen and (max-width: 480px)
+  @media screen and (min-width: 480px)
   { margin-top:20px;margin-left:0;}
 
   &:hover{background: #188ce8;

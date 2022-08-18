@@ -1,4 +1,6 @@
-.menu {&__item { font-weight: 500;
+.menu {
+  &__item { font-weight: 500;
+
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
@@ -8,35 +10,40 @@
     cursor: pointer;
     transition: color, 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (max-width: 481px)
-    {display: none;}
+    
+
+    
 
 
 }
 
-    &__list{display: flex;
+    &__list{
+    display: flex;
     gap: 50px;
     padding: 0;
-    margin: 0;} 
-    @media screen and (max-width: 480px)
-    {display: none;}
-    @media screen and (min-width: 481px) and (max-width:768px)
-    {width: 100%; margin-right: 84px; margin-left:88px; }
-
+    margin: 0;
+    
+ 
+   
+  
    
 }
-.menu__burger{display: flex; ;}
+.menu__list{@media screen and (min-width: 768px) and (max-width:1199px){margin-right: 84px; margin-left:88px; } }}
+.menu__burger{display: flex;}
 
 
 .menu__button-burger{
   background-color: transparent;border-color: transparent;
-  @media screen and (min-width: 481px)
-  {display: none; position:absolute; left:0;  }
   padding-left: auto;
   padding-right: auto;
   display: flex;
   padding-top: 0;
-  position: absolute; top:22px; right:16px ;
+  position:absolute; right:0; top:22px; right:16px;
+  @media screen and (min-width: 480px)
+  {max-width: 448px; }
+  @media screen and (min-width: 768px)
+  {display: none; }
+   
 }
 
   
@@ -44,7 +51,7 @@
   
 
 
-.menu__list{ @media screen and (max-width: 481px)
+.menu__list{ @media screen and (min-width: 0) and (max-width:767px) 
   {display: none;}}
 .menu__button-burger .menu__icon-cross{display: none}
 
@@ -77,7 +84,7 @@
     cursor: pointer;
     transition: color, 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (max-width: 480px)
+    @media screen and (min-width: 480px) and (max-width:767px)
     {width: 480px;display: none; padding: 0;}
     
     

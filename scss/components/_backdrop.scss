@@ -9,6 +9,6 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity, 250ms linear, visibility 250ms ease-in-out;
-    @media screen and (max-width: 480px)
+    @media screen and (min-width: 480px)
     {  max-width: 100%;display: flex;}
   }
