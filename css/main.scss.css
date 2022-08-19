@@ -1389,7 +1389,7 @@ header.no-transparency {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
   color: #AFB1B8;
