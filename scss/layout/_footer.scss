@@ -4,17 +4,23 @@
   background-color: #2f303a;
   min-height: 252px;
   padding-bottom: 60px;
+  align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   /**Mobile*/
   @media screen and (min-width: 0) and (max-width:767px)
   {max-width: 448px;   display: block;
     text-align: center;
     margin-left: auto;
     margin-right: auto;}
+    /**Tablet*/
+  @media screen and (min-width: 768px) and (max-width:1199px)
+    {max-width:100% ; margin-left: auto; margin-right: auto;}
   
   
 &__container{display: flex;
   
-  align-items: baseline; 
+  align-items: baseline; flex-wrap: wrap; justify-content: center; 
   
     
 }
@@ -22,18 +28,25 @@
   {max-width: 100%;  display: inline-block;
     text-align: center;
     margin-left: auto;
-    margin-right: auto;}}
-
+    margin-right: auto;
+  @media screen and (min-width: 768px) and (max-width:1199px)
+  {align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;}}
+   
 
 
 
 .footer__side{
   &--social{margin-left: 70px;
-  @media screen and (min-width: 0) and (max-width:767px){margin:0}}
-  @media screen and (min-width: 0) and (max-width:767px)
-  {max-width: 448px;}
+  @media screen and (min-width: 0) and (max-width:767px){margin:0}
+  @media screen and (min-width: 768px) and (max-width:1199px)
+  {margin-left: 165px;}}
+  
     text-align: center;
-     margin-bottom: 60px; margin-left: 0;};
+     margin-bottom: 60px; margin-left: 0;
+     @media screen and (min-width: 768px) and (max-width:1199px)
+     { display: block; }};
   
   
      .footer__side{ @media screen and (min-width: 0) and (max-width:767px)
@@ -106,7 +119,9 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;} 
+  color: #FFFFFF;  
+  @media screen and (min-width: 768px) and (max-width:1199px)
+  {text-align: center;}} 
   
   &__item{font-style: normal;
       font-size: 14px;
@@ -139,4 +154,4 @@ max-width: 100%;
   transition: color, 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   max-width:100%;
-}
+}}

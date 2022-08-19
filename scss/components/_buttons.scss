@@ -100,8 +100,11 @@
   border-color: transparent;
   letter-spacing: 0.06em;
   cursor: pointer;
-  @media screen and (min-width: 480px)
-  { margin-top:20px;margin-left:0;}
+  @media screen and (min-width: 768px) and (max-width:1199px)
+  { display: block; align-items: center; margin-top: 20px; margin-left: 125px;margin-right:125px; }
+  
+  @media screen and (min-width: 0) and (max-width:767px)
+  { margin-top:20px; margin-left:0;}
 
   &:hover{background: #188ce8;
     transition: 250ms;
