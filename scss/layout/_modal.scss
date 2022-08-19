@@ -11,7 +11,9 @@
     z-index: 1000;
     transition: opacity, 600ms linear, visibility 600ms ease-out;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width: 480px)
+    @media screen and (min-width: 0px) and (max-width:767px)
+    {max-width: 100%;display: block;margin-left:auto;margin-right:auto}
+    @media screen and (min-width: 768px) and(max-width:1199px)
     {max-width: 100%;display: block;margin-left:auto;margin-right:auto}
   
 
@@ -32,8 +34,8 @@
 
         color: #212121;
         margin-bottom: 12px;
-        @media screen and (min-width: 480px)
-      {  max-width: 100%;display: block;}
+        @media screen and (min-width: 0px) and (max-width:767px)
+    {max-width: 100%;display: block;margin-left:auto;margin-right:auto}
     }
 
 
@@ -51,16 +53,18 @@
     text-decoration: underline;
     color: var(--active-button-color);
     text-underline-position: under;
-    @media screen and (min-width: 480px)
-    {  max-width: 100%;display:inline;}
+    @media screen and (min-width: 0px) and (max-width:767px)
+    {max-width: 100%;display: block;margin-left:auto;margin-right:auto}
 }
 
 .modal__form-register {
     display: block;
     margin-bottom: 20px;
     text-align: center;
-    @media screen and (min-width: 480px)
-    {  max-width: 448px;display: block;}
+    @media screen and (min-width: 0px) and (max-width:767px)
+    {max-width: 100%;display: block;margin-left:auto;margin-right:auto}
+    @media screen and (min-width: 768px) and(max-width:1199px)
+    {max-width: 100%;display: block;margin-left:auto;margin-right:auto}
   }
 }
 
@@ -119,8 +123,10 @@
     display: block;
     text-align: center;
     
-    @media screen and (min-width: 480px)
-    {  max-width: 448px;display: block;}
+    @media screen and (min-width: 0px) and (max-width:767px)
+    {max-width: 100%;display: block;margin-left:auto;margin-right:auto}
+    @media screen and (min-width: 768px) and(max-width:1199px)
+    {max-width: 100%;display: block;margin-left:auto;margin-right:auto}
     
   }
 
@@ -134,14 +140,17 @@
     cursor: pointer;
     min-height: 40px;
     outline: none;
-    @media screen and (min-width: 480px)
-    {  max-width: 370px;display: block;}
+    @media screen and (min-width: 0px) and (max-width:767px)
+    {max-width: 480px;display: block;margin-left:auto;margin-right:auto}
+    @media screen and (min-width: 768px) and(max-width:1199px)
+    {max-width: 720px;display: block;margin-left:auto;margin-right:auto}
     
     &:hover{   border-color: var(--active-button-color);}
     &:focus{ border-color: var(--active-button-color)}
-    @media screen and (min-width: 480px)
-    {  max-width: 100%;display: block;}
-    text-align: left;
+    @media screen and (min-width: 0px) and (max-width:767px)
+    {max-width: 480px;display: block;margin-left:auto;margin-right:auto}
+    @media screen and (min-width: 768px) and(max-width:1199px)
+    {max-width: 720px;display: block;margin-left:auto;margin-right:auto}
     
 }
 
@@ -175,8 +184,10 @@
     max-width: 448px;    
     resize: none;
     outline: none;
-    @media screen and (min-width: 480px)
-    {max-max-width: 448px;;display: block;}
+    @media screen and (min-width: 0px) and (max-width:767px)
+    {max-width: 480px;display: block;margin-left:auto;margin-right:auto}
+    @media screen and (min-width: 768px) and(max-width:1199px)
+    {max-width: 720px;display: block;margin-left:auto;margin-right:auto}
     &:hover{border-color: var(--active-button-color);}
     &:focus{border-color: var(--active-button-color);}
     
@@ -271,6 +282,8 @@ width: 100%;
     letter-spacing: 0.03em;
 
     color: #757575;
-    @media screen and (min-width: 480px)
-    {max-max-width: 448px;;display: inline;}
+    @media screen and (min-width: 0px) and (max-width:767px)
+    {max-width: 480px;display: block;margin-left:auto;margin-right:auto}
+    @media screen and (min-width: 768px) and(max-width:1199px)
+    {max-width: 720px;display: block;margin-left:auto;margin-right:auto}
 }

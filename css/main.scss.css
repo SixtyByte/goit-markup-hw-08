@@ -919,9 +919,9 @@ header.no-transparency {
   border-radius: 4px;
   background-color: var(--active-button-color);
 }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 767px) {
   .menu__link--current::after {
-    width: 480px;
+    max-width: 480px;
     display: none;
   }
 }
@@ -1708,7 +1708,15 @@ header.no-transparency {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .modal {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal {
     max-width: 100%;
     display: block;
@@ -1732,10 +1740,12 @@ header.no-transparency {
   color: #212121;
   margin-bottom: 12px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .modal__header {
     max-width: 100%;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .modal .modal__icon--agree {
@@ -1756,10 +1766,12 @@ header.no-transparency {
   color: var(--active-button-color);
   text-underline-position: under;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .modal .modal__contract-link {
     max-width: 100%;
-    display: inline;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .modal .modal__form-register {
@@ -1767,10 +1779,20 @@ header.no-transparency {
   margin-bottom: 20px;
   text-align: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .modal .modal__form-register {
-    max-width: 448px;
+    max-width: 100%;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal .modal__form-register {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1844,10 +1866,20 @@ header.no-transparency {
   display: block;
   text-align: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .modal-form {
-    max-width: 448px;
+    max-width: 100%;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal-form {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1859,12 +1891,21 @@ header.no-transparency {
   cursor: pointer;
   min-height: 40px;
   outline: none;
-  text-align: left;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .modal__input {
-    max-width: 370px;
+    max-width: 480px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__input {
+    max-width: 720px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .modal__input:hover {
@@ -1873,10 +1914,20 @@ header.no-transparency {
 .modal__input:focus {
   border-color: var(--active-button-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .modal__input {
-    max-width: 100%;
+    max-width: 480px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__input {
+    max-width: 720px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1919,10 +1970,20 @@ header.no-transparency {
   resize: none;
   outline: none;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .modal__comment {
-    max-max-width: 448px;
+    max-width: 480px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__comment {
+    max-width: 720px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .modal__comment:hover {
@@ -2026,10 +2087,20 @@ header.no-transparency {
   letter-spacing: 0.03em;
   color: #757575;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .modal__agree-point {
-    max-max-width: 448px;
-    display: inline;
+    max-width: 480px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__agree-point {
+    max-width: 720px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
