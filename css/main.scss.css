@@ -1242,6 +1242,7 @@ header.no-transparency {
   .what-we-do__images {
     max-width: 100%;
     display: none;
+    position: relative;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -1255,6 +1256,49 @@ header.no-transparency {
     max-width: 100%;
     display: none;
   }
+}
+
+.what-we-do__overlay {
+  background: rgba(47, 48, 58, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0px;
+}
+
+.what-we-do__overlay-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 370px;
+  color: #FFFFFF;
+}
+
+.what-we-do__item {
+  position: relative;
 }
 
 .team-section {
@@ -1529,7 +1573,6 @@ header.no-transparency {
   padding-top: 60px;
   background-color: #2f303a;
   min-height: 252px;
-  padding-bottom: 60px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -1564,6 +1607,11 @@ header.no-transparency {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
   .footer .footer__container {
@@ -1587,7 +1635,6 @@ header.no-transparency {
   }
 }
 .footer .footer__container .footer__side {
-  text-align: center;
   margin-bottom: 60px;
   margin-left: 0;
 }
@@ -1610,7 +1657,6 @@ header.no-transparency {
   }
 }
 .footer .footer__container .footer__side {
-  text-align: center;
   margin-bottom: 60px;
   margin-left: 0;
 }
