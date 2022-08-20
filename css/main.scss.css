@@ -996,7 +996,7 @@ header.no-transparency {
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .main-window {
-    max-width: 100px;
+    width: 100%;
     display: block;
   }
 }
@@ -1295,6 +1295,20 @@ header.no-transparency {
           align-items: center;
   width: 370px;
   color: #FFFFFF;
+}
+@media screen and (min-width: 0) and (max-width: 1199px) {
+  .what-we-do__overlay-text {
+    max-width: 100%;
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .what-we-do__overlay-text {
+    display: none;
+    padding-right: 15px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .what-we-do__item {
