@@ -652,7 +652,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100%;
+  width: 100%;
   width: 448px;
 }
 
