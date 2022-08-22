@@ -106,7 +106,6 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-top: 30px;
-  margin-bottom: 200px;
   min-width: 200px;
   min-height: 50px;
   max-height: 50px;
@@ -374,6 +373,7 @@ body {
   margin-left: auto;
   margin-right: 0;
   padding: 0;
+  white-space: nowrap;
 }
 @media screen and (max-width: 767px) {
   .contact-styles {
@@ -384,7 +384,6 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-styles {
     max-width: 720px;
-    display: none;
     display: table;
     margin-bottom: 21px;
     margin-top: 21px;
@@ -452,17 +451,19 @@ body {
 }
 
 .project-section {
-  padding-top: 85px;
-  padding-bottom: 103px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 @media screen and (min-width: 0) and (max-width: 1199px) {
   .project-section {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 0) and (max-width: 1199px) and (min-width: 768px) and (max-width: 1199px) {
   .project-section {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .project-section__list {
@@ -499,12 +500,13 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-left: 0;
-  margin-top: 50px;
+  margin-top: 34px;
   margin-bottom: 0;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
   .project-section .project-section__image-list {
     max-width: 448px;
+    margin-top: 40px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -514,6 +516,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 14px;
   }
 }
 .project-section .project-section__portfolio-item {
@@ -675,6 +678,9 @@ body {
   transition: color, 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.js-close-menu:hover {
+  fill: var(--active-button-color);
 }
 
 .js-menu__list {
@@ -952,6 +958,10 @@ header.no-transparency {
   }
 }
 
+.menu__button-burger:hover {
+  fill: var(--active-button-color);
+}
+
 @media screen and (min-width: 0) and (max-width: 767px) {
   .menu__list {
     display: none;
@@ -1035,18 +1045,12 @@ header.no-transparency {
 
 .main-window__container {
   text-align: center;
-  min-height: 600px;
   /**tablet*/
 }
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .main-window__container {
     max-width: 448px;
     display: block;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .main-window__container {
-    width: 720px;
   }
 }
 @media screen and (width: 1200px) {
@@ -1062,7 +1066,7 @@ header.no-transparency {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studiopage/8.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 600px;
+  padding-bottom: 200px;
   max-width: 1600px;
   background-position: center;
   margin-right: auto;
@@ -1070,13 +1074,13 @@ header.no-transparency {
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .main-window {
-    max-width: 100%;
+    max-width: 448px;
     display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .main-window {
-    max-width: 100%;
+    width: 100%;
     display: block;
   }
 }
@@ -1097,7 +1101,7 @@ header.no-transparency {
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
   .main-window__title {
-    max-width: 360px;
+    max-width: 440px;
     margin-right: 0;
     font-size: 26px;
     line-height: 1.6153846154;
@@ -1106,6 +1110,8 @@ header.no-transparency {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .main-window {
     max-width: 100%;
+    padding-top: 118px;
+    padding-bottom: 118px;
     display: block;
     font-size: 26px;
     background-position: auto;
@@ -1120,6 +1126,8 @@ header.no-transparency {
   .main-window {
     max-width: 100%;
     font-size: 26px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     display: block;
     background-position: auto;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
@@ -1294,6 +1302,14 @@ header.no-transparency {
     width: 100%;
     text-align: left;
     padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .props-section__text--last {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 60px;
   }
 }
 
@@ -1761,6 +1777,7 @@ header.no-transparency {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer .footer__container .footer__side {
     display: block;
+    text-align: center;
   }
 }
 .footer .footer__container .footer__side {
@@ -1925,6 +1942,7 @@ header.no-transparency {
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .modal {
+    width: 450px;
     max-width: 100%;
     display: block;
     margin-left: auto;
@@ -1933,6 +1951,7 @@ header.no-transparency {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal {
+    width: 450px;
     max-width: 100%;
     display: block;
     margin-left: auto;
@@ -1956,6 +1975,14 @@ header.no-transparency {
   margin-bottom: 12px;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  .modal__header {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal__header {
     max-width: 100%;
     display: block;

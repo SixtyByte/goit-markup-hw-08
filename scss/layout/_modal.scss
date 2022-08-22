@@ -12,9 +12,9 @@
     transition: opacity, 600ms linear, visibility 600ms ease-out;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 0px) and (max-width:767px)
-    {max-width: 100%;display: block;margin-left:auto;margin-right:auto}
+    { width:450px; max-width: 100%;display: block;margin-left:auto;margin-right:auto}
     @media screen and (min-width: 768px) and(max-width:1199px)
-    {max-width: 100%;display: block;margin-left:auto;margin-right:auto}
+    { width:450px; max-width: 100%;display: block;margin-left:auto;margin-right:auto}
   
 
     &__header {
@@ -35,6 +35,8 @@
         color: #212121;
         margin-bottom: 12px;
         @media screen and (min-width: 0px) and (max-width:767px)
+    {max-width: 100%;display: block;margin-left:auto;margin-right:auto}
+    @media screen and (min-width: 768px) and (max-width:1199px)
     {max-width: 100%;display: block;margin-left:auto;margin-right:auto}
     }
 
